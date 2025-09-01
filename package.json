@@ -17,7 +17,7 @@
     "bugs": {
         "url": "https://github.com/shamyt9/Code-Ground/issues"
     },
-    "homepage": "https://shamyt9.github.io/Code-Ground/",
+    "homepage": "https://shamyt9.github.io/Code-Ground/dist/",
     "devDependencies": {
         "gh-pages": "^6.3.0"
     }
