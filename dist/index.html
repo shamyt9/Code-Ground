@@ -56,6 +56,73 @@
         </div>
 
         <div class="content">
+            <!-- SINGLY LINKED LIST  -->
+              <div class="code-card" data-chapter="Linked Lists" data-language="cpp" data-date="2025-09-01">
+                <div class="card-header">
+                    <h3>Creating Singly Linked List</h3>
+                    <div>
+                        <span class="language">C++</span>
+                        <span class="date">Sep 01, 2025</span>
+                    </div>
+                </div>
+                <div class="code-container">
+                    <pre><code>#include<iostream>
+// ============== singly linked list ==============
+using namespace std;
+
+struct Node {
+    int data;
+    Node* next;
+
+    Node(int value) {
+        data = value;
+        next = nullptr;
+    }
+};
+
+int main() {
+   // ============ FIVE NODE WITH DISPLAYING VALUE WITHOUT LOOP ===================== 
+
+   Node* head = new Node(10);
+   Node *first=new Node(20);
+   Node *second=new Node(30);
+   Node *third=new Node(40);
+   Node *fourth=new Node(50);
+   head->next=first;
+   first->next=second;
+   second->next=third;
+   third->next=fourth;
+
+  // ============ Displaying the value ======================
+  cout<<head->data<<endl;
+  cout<<first->data<<endl;
+  cout<<second->data<<endl;
+  cout<<third->data<<endl;
+  cout<<fourth->data<<endl;
+
+   // ================== cleaning up memory =================
+   delete head;
+   delete first;
+   delete second;
+   delete third;
+   delete fourth;
+
+   return 0;
+}
+</code></pre>
+                </div>
+                <div class="output-container">
+                    <h4>Output:</h4>
+                    <div class="output">10
+20
+30
+40
+50</div>
+                </div>
+                <div class="card-actions">
+                    <button class="copy-btn"><i class="fas fa-copy"></i> Copy Code</button>
+                </div>
+            </div>
             <!-- Code Card 1 - C++ -->
             <div class="code-card" data-chapter="arrays" data-language="cpp" data-date="2023-10-15">
                 <div class="card-header">
